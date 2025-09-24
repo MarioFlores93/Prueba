@@ -1,14 +1,12 @@
-import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
+import { storyblokEditable } from "@storyblok/react";
 
 const Hero = ({ blok }) => {
   return (
     <div
-      style={{ display: "flex", justifyContent: "space-around" }}
-      {...storyblokEditable(blok)}
-      className="grid"
+      style={{ textAlign: "center" }} {...storyblokEditable(blok)}
     >
      
-        <StoryblokComponent blok={blok} key={blok._uid} />
+        {blok.title}
       
     </div>
   );
