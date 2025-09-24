@@ -5,8 +5,8 @@ const Hero = ({ blok }) => {
     <div
       style={{ textAlign: "center" }} {...storyblokEditable(blok)}
     >
-     <img className="center" alt="ddd" src={blok.filename} />
-        {blok.title} {blok.filename}
+     <img className="center" alt="ddd" src={blok.imagen.filename} />
+        {blok.title} {blok.imagen.filename}
     </div>
   );
 };
