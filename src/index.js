@@ -19,7 +19,7 @@ storyblokInit({
     teaser: Teaser,
     grid: Grid,
     feature: Feature,
-    hero:Hero,
+    paginademo:Hero,
   },
   apiOptions: {
     // for spaces located in the US or China:

@@ -1,15 +1,17 @@
- 
-import { storyblokEditable } from "@storyblok/react";
+import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 
-const Hero = ({blok}) => {
-    return(
-
-    <h2 style={{ textAlign: "center" }} {...storyblokEditable(blok)}>
-      hola
-      <image alt="Hero" src={blok.image.filename}></image>
-    </h2>
+const Hero = ({ blok }) => {
+  return (
+    <div
+      style={{ display: "flex", justifyContent: "space-around" }}
+      {...storyblokEditable(blok)}
+      className="grid"
+    >
      
-    );
-}
+        <StoryblokComponent blok={blok} key={blok._uid} />
+      
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
