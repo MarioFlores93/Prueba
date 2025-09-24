@@ -1,22 +1,14 @@
  
 import { storyblokEditable } from "@storyblok/react";
 
-const Hero = ({block}) => {
+const Hero = ({blok}) => {
     return(
 
-
-     <div
-          style={{ display: "flex", justifyContent: "space-around" }}
-          {...storyblokEditable(block)}
-          className="grid"
-        >
-        <image alt="Hero" src={block.image.filename}></image>
-           {
-        block.title
-       }
-        </div>
-    
-
+    <h2 style={{ textAlign: "center" }} {...storyblokEditable(blok)}>
+      hola
+      <image alt="Hero" src={blok.image.filename}></image>
+    </h2>
+     
     );
 }
 
