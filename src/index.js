@@ -9,6 +9,7 @@ import Page from "./components/Page";
 import Teaser from "./components/Teaser";
 import Grid from "./components/Grid";
 import Feature from "./components/Feature";
+import Hero from "./components/Hero";
 
 storyblokInit({
   accessToken: "RQBfBKGhC5ySSzeN8dVSjAtt",
@@ -18,6 +19,7 @@ storyblokInit({
     teaser: Teaser,
     grid: Grid,
     feature: Feature,
+    hero:Hero,
   },
   apiOptions: {
     // for spaces located in the US or China:
