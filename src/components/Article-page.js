@@ -5,9 +5,9 @@ const Article_page = ({ blok }) => {
     <div
       style={{ textAlign: "center" }} {...storyblokEditable(blok)}
     >
-     <img className="center" alt="ddd" src={blok.imagen.filename} />
+     <img className="center" alt="ddd" src={blok.image.filename} />
         {blok.title}  
-        {blok.imagen.filename}  
+        {blok.image.filename}  
         Tiempo lectura {blok.read_time}  
         Fecha publicacion {blok.published_date}  
 
